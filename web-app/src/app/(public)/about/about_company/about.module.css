@@ -1,0 +1,34 @@
+.main{
+    @apply
+    h-full
+    pt-[80px]
+    px-[248px]
+}
+.slider_text{
+    @apply
+    flex
+    justify-between
+    items-center
+}
+.slider{
+    @apply
+    bg-red-400
+    w-[400px]
+    h-[400px]
+}
+.text_company{
+    @apply
+    w-[800px]
+    text-lg
+}
+.achievements{
+    @apply
+    flex
+    justify-between
+    mt-[100px]
+}
+.blok_achievement{
+    @apply
+    w-[280px]
+    text-gray-300
+}

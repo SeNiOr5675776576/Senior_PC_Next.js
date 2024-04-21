@@ -1,0 +1,12 @@
+.swiperslide{
+    @apply
+    w-[450px]
+    h-[450px]
+    flex
+}
+.img_company{
+    @apply
+    w-[450px]
+    h-[450px]
+    object-cover
+}

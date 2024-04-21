@@ -1,0 +1,54 @@
+.main{
+    @apply
+    px-[248px]
+}
+.top_block{
+    @apply
+    flex
+    items-end
+    gap-4
+    mt-5
+    
+}
+.nav_button{
+    @apply
+    relative
+    text-lg
+    text-white
+}
+.nav_button::after{
+    content: '';
+    @apply
+    absolute
+    w-[0px]
+    h-[1.5px]
+    left-0
+    bottom-0
+    opacity-0
+    duration-300
+    bg-white
+}
+.nav_button:hover::after{
+    @apply
+    w-full
+    opacity-100
+    bg-white
+}
+.nav_active{
+    @apply
+    text-xl
+    text-white
+    border-b-[1.5px]
+}
+.card_block{
+    @apply
+    grid
+    grid-cols-3
+    gap-8
+    mt-10
+    pb-10
+}
+.card{
+    @apply
+    mx-auto
+}

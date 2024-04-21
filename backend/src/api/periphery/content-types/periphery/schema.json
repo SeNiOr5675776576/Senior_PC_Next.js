@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peripheries",
+  "info": {
+    "singularName": "periphery",
+    "pluralName": "peripheries",
+    "displayName": "Periphery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "state": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "amount": {
+      "type": "integer",
+      "required": true,
+      "private": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "monitors",
+        "mouse",
+        "mat",
+        "keyboard",
+        "headphones",
+        "microphone",
+        "chair"
+      ]
+    }
+  }
+}

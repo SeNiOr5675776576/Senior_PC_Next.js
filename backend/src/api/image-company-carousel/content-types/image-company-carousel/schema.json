@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "image_company_carousels",
+  "info": {
+    "singularName": "image-company-carousel",
+    "pluralName": "image-company-carousels",
+    "displayName": "Image_company_carousel"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

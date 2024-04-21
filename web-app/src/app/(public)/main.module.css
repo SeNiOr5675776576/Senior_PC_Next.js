@@ -1,0 +1,120 @@
+.main{
+    @apply
+    px-[248px]
+}
+.slider{
+    @apply
+    flex
+    mt-[100px]
+}
+.arrow_down{
+    animation: arrow_down 2s infinite;
+    transition: 1s;
+    @apply
+    flex
+    justify-center
+    relative
+    mt-20
+    text-7xl
+}
+.arrow_down:hover{
+    @apply
+    cursor-pointer
+}
+.arrow_down::before{
+    @apply
+    absolute
+}
+@keyframes arrow_down{
+    0% { top: 0; opacity: 1;}
+    100% {top: 30px; opacity: 0;}
+}
+.nameblock_advantages{
+    @apply
+    flex
+    justify-center
+    pt-[10px]
+    mt-[170px]
+    text-4xl
+    font-semibold
+}
+.container_advantages{
+    @apply
+    flex
+    flex-col
+    mt-[50px]
+}
+.top_row{
+    @apply
+    flex
+    justify-center
+    gap-6
+}
+.block_top{
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    background: #3C3C3C;
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    w-[9vw]
+    h-[18vh]
+    mt-[5vh]
+}
+.text_block_advantages{
+    @apply
+    text-2xl
+    font-medium
+    text-center
+}
+.bottom_row{
+    @apply
+    flex
+    justify-center
+    gap-6
+}
+.block_bottom{
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    background: #3C3C3C;
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    w-[9vw]
+    h-[18vh]
+    mt-[3vh]
+}
+.line_vertical{
+    background: #989898;
+    width: 0.2vw;
+    height: 26vh;
+}
+.line_horizontal{
+    margin-right: auto;
+    margin-left: auto;
+    background: #989898;
+    width: 62vw;
+    height: 0.3vh;
+}
+.container_logo_company{
+    @apply
+    w-[99vw]
+    -mx-[248px]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

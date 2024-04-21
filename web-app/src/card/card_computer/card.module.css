@@ -1,0 +1,90 @@
+.background{
+    background-color: rgba(255, 255, 255, 0.60);
+    clip-path: polygon(90% 0%, 97% 3%, 100% 10%, 100% 90%, 97% 97%, 90% 100%, 10% 100%, 3% 97%, 0% 90%, 0% 10%, 3% 3%, 10% 0%);
+    @apply
+    flex
+    w-[314px]
+    h-[550px]
+}
+.contain{
+    background-color: rgba(55, 55, 55, 1);
+    border-color: rgba(255, 255, 255, 0.60);
+    clip-path: polygon(90% 0, 97% 3%, 100% 10%, 100% 90%, 97% 97%, 90% 100%, 10% 100%, 3% 97%, 0 90%, 0 10%, 3% 3%, 10% 0);
+    @apply
+    flex
+    flex-col
+    items-center
+    w-[300px]
+    h-[536px]
+    px-[25px]
+    mx-auto
+    my-auto
+}
+.image{
+    @apply
+    relative
+    object-cover
+    block
+    w-[13vw]
+    h-[25vh]
+    mt-3
+}
+.name{
+    @apply
+    text-3xl
+    font-medium
+    mt-1
+}
+.price{
+    @apply
+    mt-1
+    text-xl
+    font-medium
+}
+.line{
+    @apply
+    w-full
+    mt-2
+}
+.info_block{
+    @apply
+    flex
+    flex-col
+    justify-start
+    gap-5
+    my-auto
+}
+.cpu{
+    @apply
+    flex
+    items-center
+    gap-3
+}
+.cpu_icon{
+    @apply
+    text-2xl
+}
+.gpu{
+    @apply
+    flex
+    items-center
+    gap-3
+}
+.gpu_icon{
+    @apply
+    text-2xl
+}
+.ram{
+    @apply
+    flex
+    items-center
+    gap-3
+}
+.ram_icon{
+    @apply
+    text-2xl
+}
+.text_info{
+    @apply
+    text-lg
+}

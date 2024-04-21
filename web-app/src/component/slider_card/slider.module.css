@@ -1,0 +1,11 @@
+.swiper{
+    @apply
+    w-[1000px]
+    h-[600px]
+}
+.swiperslide{
+    @apply
+    flex
+    justify-center
+    items-center
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_bg_signs",
+  "info": {
+    "singularName": "image-bg-sign",
+    "pluralName": "image-bg-signs",
+    "displayName": "Image_bg_sign"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

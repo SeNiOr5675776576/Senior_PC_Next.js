@@ -1,0 +1,32 @@
+.block_content{
+    @apply
+    grid
+    grid-cols-4
+    px-[248px]
+    py-[16px]
+}
+.logo{
+    @apply
+    col-span-1
+    text-4xl
+    font-bold
+}
+.nav{
+    @apply
+    flex
+    col-span-2
+    text-[30px]
+    font-medium
+    justify-between
+}
+.bag_user{
+    @apply
+    flex
+    col-span-1
+    justify-end
+    gap-4
+}
+.icons{
+    @apply
+    text-[42px]
+}
