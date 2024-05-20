@@ -4,25 +4,24 @@ import { PiEnvelope } from "react-icons/pi";
 import { PiLockBold } from "react-icons/pi";
 import { PiEyeLight } from "react-icons/pi";
 import { PiEyeSlash } from "react-icons/pi";
-import { useEffect, useState } from 'react';
-import { useBg } from '@/store/use_bg';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Url } from '@/constants/request';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 export default function User(){
-    const [index, setImage, image, addImage] = useBg((state) => [state.indexImage, state.randomImage, state.image, state.addImage])
-    const query = useQuery({ queryKey: ['background'], queryFn: async () => {
+    const query = useQuery({ queryKey: ['background_in'], queryFn: async () => {
         const req = await axios.get(Url.getDataBackground)
-        console.log(req.data.data)
-        await addImage(req?.data?.data)
+        const arr = req?.data?.data
+        const idx = Math.floor(Math.random() * arr?.length)
+        const img = arr[idx]?.attributes?.Image?.data?.attributes?.url
+        return img
     }, retry: 3 })
     const [input, setInput] = useState(false)
-    useEffect(()=>{setImage()}, [])
     return(
         <div className={style.main}>
-            <Image fill src={Url.getImage(image[index]?.attributes?.Image?.data?.attributes?.url)}/>
+            {query?.data && <Image fill src={Url.getImage(query?.data)}/>}
             <div className={style.background}>
                 <div className={style.block_authorization}>
                     <h1 className={style.text_h1}>Авторизация</h1>
